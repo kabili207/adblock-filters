@@ -1,5 +1,5 @@
-[Adblock Plus 2.0]
-! Checksum: XwM9HZkRC/BcQGYnSKRKkg
+﻿[Adblock Plus 2.0]
+! Checksum: 3rYmlR53S/8IXkhKa5t/XQ
 ! Title: Kabi List
 ! Version: 201507291925
 ! Expires: 2 days
