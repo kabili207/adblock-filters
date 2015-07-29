@@ -1,10 +1,12 @@
 [Adblock Plus 2.0]
-! Checksum: 5i+T6hgdZGryN5rA68LclQ
+! Checksum: XwM9HZkRC/BcQGYnSKRKkg
 ! Title: Kabi List
-! Version: 201507291155
+! Version: 201507291925
 ! Expires: 2 days
 *addthis.com^
 *sharethis.com^
 *tynt.com^
 ||video.ibtimes.co.uk/player/*
+||*.are-ter.com/*
+||ph.शांति.com/*
 www.extremetech.com###stickyleaderboard
