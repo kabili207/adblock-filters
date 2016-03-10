@@ -1,8 +1,9 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: mvUdN3Aue6xjy38DrKESIA
+! Checksum: 3u01mu1S1hftuy1Qq56nwQ
 ! Title: Kabi List
-! Version: 201508111021
+! Version: 201603111421
 ! Expires: 2 days
+! Last modified: 10 Mar 2016 14:21 EST
 ||addthis.com^$third-party
 ||are-ter.com^$third-party
 ||sharethis.com^$third-party
@@ -10,3 +11,8 @@
 ||ph.शांति.com^$third-party
 ||video.ibtimes.co.uk/player/*
 www.extremetech.com###stickyleaderboard
+arstechnica.com###lg-pushdown
+fusion.net###fusion-recirc-timeout
+arstechnica.com###article-footer-wrap > .thin-divide-bottom:nth-of-type(1) > .share-buttons
+www.toptal.com##.is-active.is-fullscreen.bounce_modal > .bounce_modal-inner
+www.gfi.com##.ulp-window
