@@ -30,14 +30,26 @@
 #                                                                           #
 #############################################################################
 
-import sys, re, codecs, hashlib, base64
+import sys, re, codecs, hashlib, base64, pytz
+from datetime import datetime
 
 checksumRegexp = re.compile(r'^\s*!\s*checksum[\s\-:]+([\w\+\/=]+).*\n', re.I | re.M)
+versionRegexp = re.compile(r'^\s*!\s*version[\s\-:]+(\d+).*\n', re.I | re.M)
+modifiedRegexp = re.compile(r'^\s*!\s*last\smodified[\s\-:]+([\w: ]+).*\n', re.I | re.M)
 
 def addChecksum(data):
+  data = updateDates(data)
   checksum = calculateChecksum(data)
   data = re.sub(checksumRegexp, '', data)
   data = re.sub(r'(\r?\n)', r'\1! Checksum: %s\1' % checksum, data, 1)
+  return data
+
+def updateDates(data):
+  now = datetime.now(pytz.utc)
+  ver = now.strftime('%Y%m%d%H%M')
+  modified = now.strftime('%d %b %Y %H:%M %Z')
+  data = re.sub(versionRegexp, '! Version: %s\n' % ver, data, 1)
+  data = re.sub(modifiedRegexp, '! Last modified: %s\n' % modified, data, 1)
   return data
 
 def calculateChecksum(data):
