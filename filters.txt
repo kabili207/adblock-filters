@@ -1,21 +1,24 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: dKX9Ogfixm9kKajoMYzsYQ
+! Checksum: yU5z+wuPhyx2YhdMptt6gA
 ! Title: Kabi List
-! Version: 201605081843
+! Version: 201605161433
 ! Expires: 2 days
-! Last modified: 08 May 2016 18:43 UTC
+! Last modified: 16 May 2016 14:33 UTC
 ||addthis.com^$third-party
 ||are-ter.com^$third-party
 ||sharethis.com^$third-party
 ||tynt.com^$third-party
 ||ph.शांति.com^$third-party
 ||video.ibtimes.co.uk/player/*
-www.extremetech.com###stickyleaderboard
-arstechnica.com###lg-pushdown
+extremetech.com###stickyleaderboard
 fusion.net###fusion-recirc-timeout
+arstechnica.com###lg-pushdown
 arstechnica.com###article-footer-wrap > .thin-divide-bottom:nth-of-type(1) > .share-buttons
-www.toptal.com##.is-active.is-fullscreen.bounce_modal > .bounce_modal-inner
-www.gfi.com##.ulp-window
+toptal.com##.is-active.is-fullscreen.bounce_modal > .bounce_modal-inner
+gfi.com##.ulp-window
 dosgamesarchive.com###cookie_bg
 dosgamesarchive.com###cookie_popup_container
+webcache.googleusercontent.com###TB_overlay.expired-domain-alert
+webcache.googleusercontent.com###TB_window.expired-domain-alert
+nsclient.org###sponsors
 ##iframe[src^="http://ss.amvtv.net.xxxnavy.com/show_ads.js"]
