@@ -1,26 +1,31 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: 43PdQjSbQytJtEzu6wV+/A
+! Checksum: dEkBD1hf8dHc9ej1zc70fw
 ! Title: Kabi List
-! Version: 201810101728
+! Version: 202005201535
 ! Expires: 2 days
-! Last modified: 10 Oct 2018 17:28 UTC
+! Last modified: 20 May 2020 15:35 UTC
+@@||media.zyrenth.com/sonarr/api/*$xhr,domain=media.zyrenth.com
+@@||media.zyrenth.com/radarr/api/*$xhr,domain=media.zyrenth.com
 ||addthis.com^$third-party
 ||are-ter.com^$third-party
 ||sharethis.com^$third-party
 ||tynt.com^$third-party
 ||ph.शांति.com^$third-party
 ||video.ibtimes.co.uk/player/*
-extremetech.com###stickyleaderboard
-fusion.net###fusion-recirc-timeout
+9gag.com##.block-feature-cover
+aliexpress.com##.next-dialog-container.next-overlay-inner
+aliexpress.com##.opened.next-overlay-wrapper
 arstechnica.com###ars-sub-app-free-yubikey
 arstechnica.com###ars-sub-app-no-banners-no-tracking-animated
 arstechnica.com###lg-pushdown
 arstechnica.com###article-footer-wrap > .thin-divide-bottom:nth-of-type(1) > .share-buttons
-toptal.com##.is-active.is-fullscreen.bounce_modal > .bounce_modal-inner
-gfi.com##.ulp-window
 dosgamesarchive.com###cookie_bg
 dosgamesarchive.com###cookie_popup_container
+extremetech.com###stickyleaderboard
+fusion.net###fusion-recirc-timeout
+gfi.com##.ulp-window
+nsclient.org###sponsors
+toptal.com##.is-active.is-fullscreen.bounce_modal > .bounce_modal-inner
 webcache.googleusercontent.com###TB_overlay.expired-domain-alert
 webcache.googleusercontent.com###TB_window.expired-domain-alert
-nsclient.org###sponsors
 ##iframe[src^="http://ss.amvtv.net.xxxnavy.com/show_ads.js"]
