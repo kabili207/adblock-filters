@@ -1,9 +1,9 @@
 ﻿[Adblock Plus 2.0]
-! Checksum: dEkBD1hf8dHc9ej1zc70fw
+! Checksum: gpeiAiXw1v1GXsX0Y7wk7A
 ! Title: Kabi List
-! Version: 202005201535
+! Version: 202401022130
 ! Expires: 2 days
-! Last modified: 20 May 2020 15:35 UTC
+! Last modified: 02 Jan 2024 21:30 UTC
 @@||media.zyrenth.com/sonarr/api/*$xhr,domain=media.zyrenth.com
 @@||media.zyrenth.com/radarr/api/*$xhr,domain=media.zyrenth.com
 ||addthis.com^$third-party
@@ -25,6 +25,9 @@ extremetech.com###stickyleaderboard
 fusion.net###fusion-recirc-timeout
 gfi.com##.ulp-window
 nsclient.org###sponsors
+reddit.com##xpromo-blocking-modal
+reddit.com##xpromo-nsfw-blocking-modal
+reddit.com#$#body {overflow: visible!important; pointer-events: inherit!important}
 toptal.com##.is-active.is-fullscreen.bounce_modal > .bounce_modal-inner
 webcache.googleusercontent.com###TB_overlay.expired-domain-alert
 webcache.googleusercontent.com###TB_window.expired-domain-alert
