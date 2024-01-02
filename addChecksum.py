@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # coding: utf-8
 
 # This file is part of Adblock Plus <https://adblockplus.org/>,
@@ -30,7 +30,7 @@
 #                                                                           #
 #############################################################################
 
-import sys, re, codecs, hashlib, base64, pytz
+import sys, re, io, hashlib, base64, pytz
 from datetime import datetime
 
 checksumRegexp = re.compile(r'^\s*!\s*checksum[\s\-:]+([\w\+\/=]+).*\n', re.I | re.M)
@@ -55,7 +55,7 @@ def updateDates(data):
 def calculateChecksum(data):
   md5 = hashlib.md5()
   md5.update(normalize(data).encode('utf-8'))
-  return base64.b64encode(md5.digest()).rstrip('=')
+  return base64.b64encode(md5.digest()).decode('utf-8').rstrip('=')
 
 def normalize(data):
   data = re.sub(r'\r', '', data)
@@ -64,10 +64,10 @@ def normalize(data):
   return data
 
 def readStream(stream):
-  reader = codecs.getreader('utf8')(stream)
+  reader = io.TextIOWrapper(stream.buffer, encoding='utf-8')
   try:
     return reader.read()
-  except Exception, e:
+  except Exception as e:
     raise Exception('Failed reading data, most likely not encoded as UTF-8:\n%s' % e)
 
 if __name__ == '__main__':
@@ -76,4 +76,5 @@ if __name__ == '__main__':
     msvcrt.setmode(sys.stdout.fileno(), os.O_BINARY)
 
   data = addChecksum(readStream(sys.stdin))
-  sys.stdout.write(data.encode('utf-8'))
+  sys.stdout.write(data)
+
